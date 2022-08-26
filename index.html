@@ -182,6 +182,32 @@ body {
 .social-login__icon:hover {
 	transform: scale(1.5);	
 }
+.tooltip {
+  position: relative;
+  display: inline-block;
+
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 140px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
 </style>
 </head>
 <body>
@@ -202,6 +228,16 @@ body {
 					<i class="button__icon fa fa-chevron-right"></i>
 				</button>				
 			</form>
+		<div class="social-login">
+				<h3>Need Help?</h3>
+				<div class="social-icons">
+					<div class="tooltip"><a class="social-login__icon fa  fa-info-circle"></a>
+					  <span class="tooltiptext">Username is you.<br> Password is me.</span>
+					</div>
+					
+				</div>
+			</div>
+		
 		</div>
 		<div class="screen__background">
 			<span class="screen__background__shape screen__background__shape4"></span>
